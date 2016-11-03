@@ -1,9 +1,8 @@
 # IE
-兼容IE的各种玩意
+<h2>兼容IE的各种玩意</h2>
+<img src="http://img.ithome.com/newsuploadfiles/2013/11/20131108_134613_870.jpg" />
 
-通用方法
-
-1.指定兼容模式
+<h3>1.指定IE解析模式</h3>
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--使用当前的最高版本进行文档的解析-->    
 ```
@@ -22,4 +21,18 @@ IE=EmulateIE9	     模拟IE9，遵循 指令，参照IE=EmulateIE7说明
 chrome=1	         强制使用Chrome，需要IE下Chrome插件支持
 IE=EmulateIE10	   模拟IE10
 IE=10	             标准IE10，遵循 指令，参照IE=EmulateIE7说明
+```
+<h3>2.IE条件判断</h3>
+通过IE条件判断来给HTML设置不同的class，然后在CSS中通过给不同的class下的子class设置不同的样式即可实现
+```html
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
 ```
