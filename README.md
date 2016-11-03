@@ -1,6 +1,6 @@
 # IE
 <h2>兼容IE的各种玩意</h2>
-<img src="http://img.ithome.com/newsuploadfiles/2013/11/20131108_134613_870.jpg" />
+<img src="https://dongeg.github.io/public-images/css-triangle/ie.jpg" />
 
 <h3>1.指定IE解析模式</h3>
 ```html
