@@ -3,10 +3,12 @@
 <img src="https://dongeg.github.io/public-images/css-triangle/ie.jpg" />
 
 <h3>1.指定IE解析模式</h3>
+
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!--使用当前的最高版本进行文档的解析-->    
 ```
 X-UA-Compatible
+
 ```
 X-UA-Compatible值	说明
 IE=5	             让浏览器使用Quirks mode来显示，实际上是使用Internet Explorer 7 的 Quirks 模式来显示内容，这个模式和IE5非常相似。
@@ -24,6 +26,7 @@ IE=10	             标准IE10，遵循 指令，参照IE=EmulateIE7说明
 ```
 <h3>2.IE条件判断</h3>
 通过IE条件判断来给HTML设置不同的class，然后在CSS中通过给不同的class下的子class设置不同的样式即可实现
+
 ```html
 <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
 <!--[if IE 7 ]> <html class="ie7"> <![endif]-->
